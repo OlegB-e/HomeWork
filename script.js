@@ -37,3 +37,6 @@ menu.forEach(dish => {
 
 //7.Удаляем все элементы из массива кроме одного
 menu.splice(1, menu.length - 1);
+
+console.log("Оставшееся меню:");
+console.log(menu);
