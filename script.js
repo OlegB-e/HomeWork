@@ -26,10 +26,9 @@ let menu = [dish1, dish2, dish3];
 let removeDish1 = menu.pop();
 
 //4.Удаляем один ингрдиент из блюда, если он не пуст.
-if (removedDish1.ingredients.length > 0) {
-  removedDish1.ingredients.pop();
-}
-
+if (removeDish1.ingredients.length > 0) {
+  removeDish1.ingredients.pop();
+};
 //6.Считаем сколько мы заработаем на проданном блюде.
 menu.forEach(dish => {
   let profit = dish.price - dish.cost;
@@ -37,4 +36,4 @@ menu.forEach(dish => {
 });
 
 //7.Удаляем все элементы из массива кроме одного
-splice(1, menu.length - 1);
+menu.splice(1, menu.length - 1);
