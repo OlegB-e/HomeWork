@@ -23,11 +23,11 @@ let dish3 = {
 let menu = [dish1, dish2, dish3];
 
 //3.Удаляем одно блюдо из массива еды.
-let removeDish1 = menu.pop();
+let removedDish1 = menu.pop();
 
 //4.Удаляем один ингрдиент из блюда, если он не пуст.
-if (removeDish1.ingredients.length > 0) {
-  removeDish1.ingredients.pop();
+if (removedDish1.ingredients.length > 0) {
+  removedDish1.ingredients.pop();
 };
 //6.Считаем сколько мы заработаем на проданном блюде.
 menu.forEach(dish => {
