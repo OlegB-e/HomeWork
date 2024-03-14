@@ -1,7 +1,7 @@
 //1.Создаю несколько объектов с любимой едой.
 let dish1 = {
   name: 'Буззы',
-  ingredients: ['Мясо', 'Тесто', 'Л'],
+  ingredients: ['Мясо', 'Тесто', 'Лук'],
   cost: 500, // стоимость ингредиентов
   price: 100 // цена продажи за 1 штуку
 };
@@ -25,16 +25,16 @@ let menu = [dish1, dish2, dish3];
 //3.Удаляем одно блюдо из массива еды.
 let removeDish1 = menu.pop();
 
-//4.Удаляем один ингрдиент из блюда.
-removeDish1.ingredients.pop();
-//Добавляем блюдо обратно.
-menu.splice(0, 0, removeDish1);
+//4.Удаляем один ингрдиент из блюда, если он не пуст.
+if (removedDish1.ingredients.length > 0) {
+  removedDish1.ingredients.pop();
+}
 
 //6.Считаем сколько мы заработаем на проданном блюде.
 menu.forEach(dish => {
   let profit = dish.price - dish.cost;
-  console.log('Прибыль с блюда "${dish.name}": ${profit} рублей');
+  console.log(`Прибыль с блюда "${dish.name}": ${profit} рублей`);
 });
 
 //7.Удаляем все элементы из массива кроме одного
-menu.splice(1);
+splice(1, menu.length - 1);
